@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // npm install react-router-dom no cmd 
+import Home from './components/home/Home';
+import Produtos from './components/produtos/Produtos';
+import Cadastrar from './components/cadastrar/Cadastrar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/produtos"element={<Produtos />}></Route>
+          <Route path="/cadastrar" element={<Cadastrar />}></Route>
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
