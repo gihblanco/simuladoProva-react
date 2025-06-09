@@ -1,4 +1,35 @@
-.mainCadastrar {
-    height: 60vh;
-    width: 100vw;
+.container-cadastro {
+    padding: 2.5em;
+}
+
+.tituloCadastro {
+    color: rgb(38, 111, 221);
+    font-size: 1.5em;
+}
+
+.formulario-cadastro-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-cadastro-produto input,
+.formulario-cadastro-produto textarea {
+    margin-top: 1.5em;
+    min-height: 2em;
+    width: 80vw;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.5em 1em;
+    font-size: 400;
+}
+
+.formulario-cadastro-produto button {
+    margin-top: 1.5em;
+    min-height: 2em;
+    width: 5vw;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(38, 111, 221);
+    color: white;
+    font-size: 400;
 }

@@ -1,4 +1,8 @@
-.mainProdutos {
-    height: 60vh;
-    width: 100vw;
+.container-produtos {
+    padding: 2.5em;
+}
+
+.tituloProdutos {
+    color: rgb(38, 111, 221);
+    font-size: 1.5em;
 }

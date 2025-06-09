@@ -8,13 +8,34 @@
   background-color: rgb(38, 111, 221);
   color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-nomeLoja,
-.container-nav {
-  height: 10vh;
-  width: 100vw;
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-header h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .footer {
@@ -24,9 +45,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .footer p {
   color: white;
+}
+
+main {
+  min-height: 65vh;
+  width: 100vw;
 }

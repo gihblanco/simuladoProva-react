@@ -4,10 +4,8 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <header className='header'>
-            <div className='container-nomeLoja'>
+            <div className='container-header'>
                 <h1>MiniStore</h1>
-            </div>
-            <div className='container-nav'>
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>

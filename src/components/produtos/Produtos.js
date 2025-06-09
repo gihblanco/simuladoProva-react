@@ -1,9 +1,11 @@
 import './Produtos.css'
 
-function Produtos(){
+function Produtos() {
     return (
         <main className="mainProdutos">
-            <p>Produtos</p>
+            <div className='container-produtos'>
+                <h3 className='tituloProdutos'>Produtos Cadastrados</h3>
+            </div>
         </main>
     )
 }
