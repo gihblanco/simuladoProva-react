@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/produtos"element={<Produtos />}></Route>
           <Route path="/cadastrar" element={<Cadastrar />}></Route>
-          <Route path="/detalhes" element={<DetalhesProduto />}></Route>
+          <Route path="/detalhes/:id" element={<DetalhesProduto />}></Route> {/* <-- rota dinâmica */}
         </Routes>
         <Footer />
       </div>
