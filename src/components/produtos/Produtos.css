@@ -6,3 +6,31 @@
     color: rgb(38, 111, 221);
     font-size: 1.5em;
 }
+
+.total {
+    margin-top: 1em;
+}
+
+.item-produto {
+    height: 3em;
+    width: 80vw;
+    background-color:rgb(224, 242, 255);
+    border: 1px solid #e4e3e3;
+    border-radius: 4px;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.info-produto {
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+.item-produto a {
+    text-decoration: none;
+    color: rgb(38, 111, 221);
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 1rem;
+}

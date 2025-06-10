@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // npm install 
 import Home from './components/home/Home';
 import Produtos from './components/produtos/Produtos';
 import Cadastrar from './components/cadastrar/Cadastrar';
-import DetalhesProduto from './components/produtos/DetalhesProduto';
+import DetalhesProduto from './components/detalhes/DetalhesProduto';
 
 function App() {
   return (

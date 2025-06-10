@@ -15,20 +15,18 @@ function Produtos() {
         <main className="mainProdutos">
             <div className='container-produtos'>
                 <h3 className='tituloProdutos'>Produtos Cadastrados</h3>
-                <p>Total de produtos: {produtos.length}</p>
+                <p className='total' >Total de produtos: {produtos.length}</p>
                 <div className='lista-produtos'>
                 {produtos.length === 0 ? (
                     <p>Nenhum produto cadastrado ainda.</p>
                 ) : (
-                    <ul>
+                    <div >
                         {produtos.map((produto, index) => (
-                            <li key={index}>
-                                <div>
-                                    <p>{produto.nome} - R$ {produto.preco} <Link to={`/detalhes/${index}`}>Ver detalhes</Link></p>
-                                </div>
-                            </li>
+                            <div key={index} className='item-produto'>
+                                <p className='info-produto' >{produto.nome} - R$ {produto.preco} <Link to={`/detalhes/${index}`}>Ver detalhes</Link></p>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 )}
                 </div>
             </div>
